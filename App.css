@@ -1,0 +1,155 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI',sans-serif;
+}
+
+body{
+  background:linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);
+  min-height:100vh;
+  color:white;
+}
+
+/* MAIN WRAPPER */
+.container{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:40px 20px;
+  gap:30px;
+}
+
+/* TOP CARD */
+.card{
+  width:90%;
+  max-width:900px;
+  background:rgba(255,255,255,0.12);
+  backdrop-filter:blur(15px);
+  border:1px solid rgba(255,255,255,0.15);
+  padding:35px;
+  border-radius:20px;
+  text-align:center;
+}
+
+/* TITLE */
+.card h1{
+  font-size:2.5rem;
+  margin-bottom:10px;
+}
+
+/* SUBTITLE */
+.subtitle{
+  color:#dbeafe;
+  margin-bottom:20px;
+}
+
+/* INPUT */
+.input-box{
+  width:100%;
+  padding:15px;
+  border:none;
+  border-radius:12px;
+  outline:none;
+  margin-bottom:15px;
+}
+
+/* BUTTON */
+.analyze-btn{
+  padding:12px 25px;
+  border:none;
+  border-radius:10px;
+  background:#2563eb;
+  color:white;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.analyze-btn:hover{
+  background:#1d4ed8;
+}
+
+/* RESULT BOX */
+.result-card{
+  width:90%;
+  max-width:1000px;
+  background:white;
+  color:black;
+  border-radius:20px;
+  padding:30px;
+}
+
+/* STATS */
+.stats-container{
+  display:flex;
+  gap:15px;
+  flex-wrap:wrap;
+  margin-bottom:25px;
+}
+
+.stat-card{
+  flex:1;
+  min-width:150px;
+  background:#f1f5f9;
+  padding:15px;
+  border-radius:12px;
+  text-align:center;
+}
+
+.stat-card h3{
+  font-size:14px;
+  color:#64748b;
+}
+
+.stat-card p{
+  font-size:20px;
+  font-weight:bold;
+  color:#2563eb;
+}
+
+/* CHART */
+.chart-container{
+  display:flex;
+  justify-content:center;
+  margin:25px 0;
+}
+
+.chart-box{
+  width:300px;
+  height:300px;
+}
+
+/* SENTIMENT BOX */
+.sentiment-box{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-bottom:20px;
+}
+
+.positive,.neutral,.negative{
+  flex:1;
+  min-width:150px;
+  padding:15px;
+  border-radius:10px;
+  text-align:center;
+  background:#f8fafc;
+}
+
+.positive{border:2px solid #22c55e;}
+.neutral{border:2px solid #f59e0b;}
+.negative{border:2px solid #ef4444;}
+
+.positive h3{color:#22c55e;}
+.neutral h3{color:#f59e0b;}
+.negative h3{color:#ef4444;}
+
+/* TEXT AREAS */
+.recommendation,
+.summary{
+  margin-top:15px;
+  padding:15px;
+  background:#f8fafc;
+  border-radius:10px;
+}
